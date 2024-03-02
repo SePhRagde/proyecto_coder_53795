@@ -6,73 +6,97 @@
         <title>Fanaticos de los Green Bay Packers</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/f5922fd1ba.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
-        <header class="header">
-            <img class="logoNav" src="../assets/img/Logo.png" alt="Logo de Fanaticos">
-            <section>
-                <nav>
-                    <ul class="navIn">
-                        <li class="navegacion"><a href="../index.html">Inicio</a></li>
-                        <li class="navegacion"><a href="./nosotros.html">Nosotros</a></li>
-                        <li class="navegacion"><a href="./noticias.html">Noticias</a></li>
-                        <li class="navegacion"><a href="./eventos.html">Eventos</a></li>
-                        <li class="navegacion"><a href="./tienda.html">Tienda</a></li>
-                    </ul>
-                </nav>
-            </section>
+        <header class="position-sticky top-0">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container mh-100 mw-100">
+                    <a class="navbar-brand text-white fs-5" href="../index.html">
+                        <img class="logoNav p-2" src="../assets/img/Logo.png" alt="Logo de Fanaticos">Packers Fanáticos Colombia
+                    </a>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white text-end p-sm-2 fs-3" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text text-end p-sm-2 fs-3" aria-current="page" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-end p-sm-2 fs-3" aria-current="page" href="./noticias.html">Noticias</a>    
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-end p-sm-2 fs-3" aria-current="page" href="./eventos.html">Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-end p-sm-2 fs-3" aria-current="page" href="./tienda.html">Tienda</a>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main class="main">
-            <img src="" alt="Foto principal noticias">
+        <main class="container-fluid">
+            <div class="d-block h-50">
+                <img class="img-fluid imgNews" src="../assets/img/packersnews.png" alt="Foto principal noticias">
+            </div>
             <section>
                 <fieldset>
-                    <h2 class="titulo">Noticias</h2>
+                    <h1 class="fs-1 my-3">Noticias</h1>
                 </fieldset>
             </section>
             <section>
-                <h2 class="titulo">Resumen del último partido</h2>
+                <h2 class="fs-2 my-2">Resumen del último partido</h2>
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XdfRD0ZsMbQ?si=uCO1IsM28MgPSbWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
-            <section>
-                <fieldset>
-                    <h2 class="titulo">Calendario de partidos</h2>
-                </fieldset>
-            </section>
         </main>
-        <footer class="footer">
-            <div class="imgFoot">
-                <section>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <img src="../assets/img/Instagram.png" alt="Siguenos en nuestro Instagram">
-                    </a>
-                </section>
-                <section>
-                    <a href="tienda.html">
-                        <img src="../assets/img/Tienda.png" alt="Ve a nuestra tienda">
-                    </a>
-                </section>
-                <section>
-                    <a href="https://www.whatsapp.com" target="_blank">
-                        <img src="../assets/img/Whatsapp.jpg" alt="Unete a nuestro grupo de WhatsApp">
-                    </a>
-                </section>
-            </div>
-            <div>
-                <nav>
-                    <ul class="navFin">
-                        <li><a class="linkNavFin" href="../index.html">Inicio</a></li>
-                        <li><a class="linkNavFin" href="./nosotros.html">Nosotros</a></li>
-                        <li><a class="linkNavFin" href="./noticias.html">Noticias</a></li>
-                        <li><a class="linkNavFin" href="./eventos.html">Eventos</a></li>
-                        <li><a class="linkNavFin" href="./tienda.html">Tienda</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="copyright">
-                <img src="../assets/img/derechos-de-autor.png" alt="Derechos de autor">
-                <label for="">Todos los derechos reservados</label>
-            </div>
-        </footer>
+        <footer class="container-fluid">
+            <div class="w-auto d-flex redSocial">
+                 <div class="flex-fill">
+                     <a href="https://www.instagram.com" target="_blank">
+                         <img class="img-fluid imgFooter" src="../assets/img/Instagram.png" alt="Siguenos en nuestro Instagram">
+                     </a>
+                 </div>
+                 <div class="flex-fill">
+                     <a href="tienda.html">
+                         <img class="img-fluid imgFooter" src="../assets/img/Tienda.png" alt="Ve a nuestra tienda">
+                     </a>
+                 </div>
+                 <div class="flex-fill">
+                     <a href="https://www.whatsapp.com" target="_blank">
+                         <img class="img-fluid imgFooter" src="../assets/img/Whatsapp.jpg" alt="Unete a nuestro grupo de WhatsApp">
+                     </a>
+                 </div>
+             </div>
+             <div class="mt-2">
+                 <ul class="nav justify-content-center">
+                     <li class="nav-item">
+                         <a class="nav-link active fs-2 text-reset" aria-current="page" href="../index.html">Inicio</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link fs-2 text-reset" href="./nosotros.html">Nosotros</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link fs-2 text-reset" href="./noticias.html">Noticias</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link fs-2 text-reset" href="./eventos.html">Eventos</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link fs-2 text-reset" href="./tienda.html">Tienda</a>
+                     </li>
+                 </ul>
+             </div>
+             <div class="d-flex justify-content-center mt-3 pb-5">
+                 <i class="far fa-copyright fa-lg text-white d-flex align-items-center"></i>
+                 <label class="d-flex align-items-center text-white ms-2" for="">Todos los derechos reservados</label>
+             </div>
+         </footer>
+         <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

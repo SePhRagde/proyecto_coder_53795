@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header{
+    background-color: #00390a;
+    font-weight: 700;
+    .logoNav{
+        height: 80px;
+    }
+}
+.bgInicio{
+    width: auto;
+    height: 85vh;
+    background-image: url(../assets/img/Fondoprincipal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    .imgInicio{
+        width: 300px;
+    }
+}
+.scrollspy-example{
+    box-sizing: border-box;
+    display: block;
+    height: 120vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+}
+.carousel-item{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.logoEquipo{
+    width: auto;
+    height: 200px;
+}
+.imgNews{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+p{
+    font-family: 'Abel', sans-serif;
+}
+footer{
+    background-color: #00390a;
+    color: #d2d605;
+    .redSocial{
+        height: 40vh;
+        .imgFooter{
+            width: 600px;
+            height: 40vh;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+}    
+
+
+
+
+
+

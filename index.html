@@ -6,82 +6,181 @@
         <title>Fanaticos de los Green Bay Packers</title>
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/f5922fd1ba.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body>
-        <header class="header">
-            <img class="logoNav" src="./assets/img/Logo.png" alt="Logo de Fanaticos">
-            <section>
-                <nav >
-                    <ul class="navIn">
-                        <li class="navegacion"><a href="./index.html">Inicio</a></li>
-                        <li class="navegacion"><a href="./pages/nosotros.html">Nosotros</a></li>
-                        <li class="navegacion"><a href="./pages/noticias.html">Noticias</a></li>
-                        <li class="navegacion"><a href="./pages/eventos.html">Eventos</a></li>
-                        <li class="navegacion"><a href="./pages/tienda.html">Tienda</a></li>
-                    </ul>
-                </nav>
-            </section>
+        <header class="position-sticky top-0">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container mh-100 mw-100">
+                    <a class="navbar-brand text-white fs-5" href="./index.html">
+                        <img class="logoNav p-2" src="./assets/img/Logo.png" alt="Logo de Fanaticos">Packers Fanáticos Colombia
+                    </a>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white text-end p-sm-2 fs-3" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text text-end p-sm-2 fs-3" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-end p-sm-2 fs-3" aria-current="page" href="./pages/noticias.html">Noticias</a>    
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-end p-sm-2 fs-3" aria-current="page" href="./pages/eventos.html">Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-end p-sm-2 fs-3" aria-current="page" href="./pages/tienda.html">Tienda</a>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main class="main">
-            <div>
-                <img class="fondoPrincipal" src="./assets/img/Fondoprincipal.jpg" alt="Fondo de inicio">
-                <img class="logoSecundario" src="./assets/img/Logo.png" alt="Logo principal">
+        <main class="container-fluid px-0">
+            <div class="bgInicio">
+                <div class="d-flex h-100 align-items-end flex-row-reverse" >
+                    <img class="imgInicio" src="./assets/img/Logo.png" alt="Logo principal">
+                </div>
             </div> 
-            <section>
-                <fieldset>
-                    <h2 class="titulo">Noticias</h2>
-                    <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, eveniet modi porro alias officiis ea qui quidem expedita quod sapiente temporibus, hic ab. Tempora incidunt quo temporibus? Voluptate, eum eius?</p>
-                </fieldset>
-                    <form action="" class="chat">
-                        <label for="">Chatea con los fanáticos!</label>
-                        <input type="text" id="chat" name="chat" required>
-                        <input type="submit" value="Enviar">
-                    </form>
-            </section>
-            <section>
-                <fieldset>
-                    <h2 class="titulo">Calendario de partidos</h2>
-                </fieldset>
-                <fieldset>
-                    <h2 class="titulo">Calendario de eventos</h2>    
-                </fieldset>
-                <img class="galeria" src="" alt="Galería dinámica">
-            </section>
+            <div class="container-fluid my-3">
+                <div class="row">
+                    <div class="col">
+                        <nav id="navbar-example2" class="navbar navbar-dark bg-dark px-3">
+                            <a class="navbar-brand" href="./pages/noticias.html"><h1 class="fs-4 align-items-center">Noticias</h1></a>
+                            <ul class="nav nav-pills">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Listado</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#scrollspyHeading1">Nacidos para jugar: Sandra "La Payton" Romero, una institución del flag en México</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#scrollspyHeading2">Nacidos para jugar: Yayo Rocha, la historia de un underdog</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#scrollspyHeading3">Cantar derrota</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                            <h4 class="pt-2" id="scrollspyHeading1">Nacidos para jugar: Sandra "La Payton" Romero, una institución del flag en México</h4>
+                            <p>La infancia de Sandra Romero en Naucalpan, el municipio más industrializado del Estado de México, transcurrió jugando tocho callejero. Cuando cumplió la mayoría de edad, mientras cursaba la licenciatura en Administración de empresas en la FES Acatlán, descubrió el flag organizado.
+
+                            <p>Para emular a sus jugadores favoritos de la época, Tony Dorsett y Walter Payton, se probó como corredora en el equipo de la universidad. Cual ficción hollywoodense, un descuido de una de las receptoras en un entrenamiento propició que el entrenador del equipo descubriera su potente brazo por accidente. No volvió a mirar atrás. Y, pese a que desde entonces le apodaban "La Payton" en honor al HOF de los Chicago Bears, se afianzó como quarterback de tiempo completo.</p>
+                            
+                            <p>Durante su camino, rompió barreras de género, aprendió los fundamentos, desarrollo habilidades físicas que le permitieron sobresalir y pulió su técnica de lanzar. Consciente de lo que implicaba interpretar la posición más difícil del juego en términos físicos, técnicos y conceptuales, aceptó el reto de convertirse en un antes y un después del futbol americano nacional.</p>
+
+                            <p>"La Payton" desplazó a Sandra para convertirse en leyenda. Con once mundiales sobre la espalda y casi cuatro décadas de carrera, su figura ayudó a poner el nombre de México en el mapa mundial del flag. Sus proezas no solo se convirtieron en un argumento competitivo para los representativos nacionales, sino en una inspiración para el resto.</p>
+
+                            <p>Y lo mejor de todo: sigue en activo a sus 57 años.</p>
+                            
+                            <h4 id="scrollspyHeading2">Nacidos para jugar: Yayo Rocha, la historia de un underdog</h4>
+                            <p>Yayo Rocha fue un converso del futbol americano a los 11 años. Su padre y su hermano se lo habían inculcado, pero comenzó a jugar flag con las reservas de quien no sabe que está ante algo que le va a cambiar la vida. No olvida su primer golpe equipado, como tampoco olvida su vertiginosa transición a quarterback, la posición más exigente del juego.
+
+                            <p>La infrecuente profesión de su padre, políglota, provocó que dejará, junto a toda su familia, la zona de Ojo de Agua, en el Estado de México, para instalarse en Cancún, bajo el aparente sosiego del mar Caribe.</p>
+                                
+                            <p>En una de esas tardes de rutina para alguien que ha hecho de la playa su lugar seguro, Yayo, días antes de firmar su beca deportiva con los Leones de Anáhuac y disputar su primera final como coach de Flag —rol que adoptó como una manera de interesarse por el futbol americano desde una perspectiva más analítica—, intentó desafiar una ola, pero el sargazo acumulado le impidió ver un montículo que se había formado. Se rompió el cuello y, de no ser por su tenacidad e instinto de supervivencia, se habría quedado sin poder respirar, hablar y moverse por su propia cuenta. En un drive de último cuarto, venció el fatal diagnóstico de la ciencia y los doctores.</p>
+                                
+                            <p>Luchó por su vida y aprendió a seguir disfrutando de lo que más le gustaba en una silla de ruedas. Volvió al campo con la frescura y la emoción del novato, consciente de que había sido bendecido con una segunda oportunidad.</p>
+
+                            <p>La tetraplejía no ha sido impedimento para que, en paralelo a su faceta como coach, se haya convertido en analista para varios medios especializados. Se identifica, por razones evidentes, con los underdogs, siente un gran respeto por mentes como la de Bill Belichick y adoptó como lema de vida la frase insignia de Mike Leach: Swing your sword.</p>
+
+                            <p>Entre rendirse y continuar, se aferró a sus dos botes salvavidas: el cobijo de su familia y la tensión de la línea de la banda.</p>
+                            
+                            <h4 id="scrollspyHeading3">Cantar derrota</h4>
+                            <p>"El ganador se lo lleva todo", dice la vieja canción de Abba, "y el perdedor se hace pequeño al lado de la victoria". Pues sí. Los Chiefs de Kansas ocupan hoy todos los titulares y tienen los reflectores a su disposición. Entretanto, los 49ers de San Francisco, caídos a la relativa oscuridad del derrotado, deben lamerse las heridas y pensar en rearmarse.</p>
+                            
+                            <p>Así sucede en todos los deportes. La competencia, a fin de cuentas, solo admite un vencedor. Y todos los demás, incluso el que llevó al triunfador al límite del tiempo extra y fue superado por la diferencia de una jugada, como sucedió en este caso, se quedan con las manos vacías. Pero sabemos que nadie siente tanto el peso de la caída como el que se quedó más cerca que ninguno de los otros de conquistar el Lombardi. Puede sonar a paradoja, pero es verdad que los Titans, los Rams, los Colts, cualquiera que usted piense, duermen hoy en mayor paz que los 49ers. Porque ellos no se quedaron, esta vez, en la orilla.</p>
+                            
+                            <p>Abundan, en la NFL, las historias de los equipos que no pudieron reponerse del todo de sus grandes derrotas. Los Dolpinhs de Dan Marino cayeron en el Super Bowl XIX, celebrado en enero de 1985. Lo hicieron ante, precisamente, los 49ers de Montana. Y jamás pudieron volver al gran juego, a pesar de que tuvieron en sus filas a un Quarterback de esos que forman épocas.</p>
+
+                            <p>Otros casos aún más dramáticos: el los de los Vikings de Minnesota de los años setenta, quienes comandados por Fran Tarkenton alcanzaron los Super Bowl IV, VIII, IX Y XI y los perdieron todos. Y, a su imagen y semejanza, el de los Buffalo Bills de los noventa (los del recordado Quarterback Jim *Machine Gun* Kelly), que llegaron consecutivamente a los Super Bowl XXV, XVI, XVII Y XVIII y fueron vencidos en cada uno de ellos. Vaya constancia la de aquellos equipos, tiene que pensar uno, para levantarse de la lona e intentarlo una y otra vez, sin encontrar jamás el alivio y la redención de un triunfo.</p>
+
+                            <p>Queda el consuelo de que otras franquicias y jugadores sí que consiguieron sacudirse las secuelas de las derrotas y ganarse en el terreno su anillo de Super Bowl. Quizá ninguna tan enjundiosa como los Cowboys de los años setenta, los del coach Tom Landry y el QB Roger Staubach, quienes cayeron en el Super Bowl V ante los Colts de Baltimore, vencieron a Miami en el VI, fueron derrotados en el X por los Steelers, volvieron a ganar en el XII ante los Broncos de Denver y aún cayeron en el XIII otra vez ante los ya citados Steelers (y sumaron dos caídas en juegos finales de conferencia). Un sube y baja de emociones, que, sin embargo, dejó constancia de un equipo mentalmente a prueba de balas, capaz de intentarlo una y otra vez y de sobreponerse a la frustración.</p>
+                            
+                            <p>¿Serán capaces de resurgir estos 49ers de Purdy, McCaffrey, Samuel, Bosa y compañía? Habrá un largo offseason y una aún más larga próxima temporada para descubrirlo.</p>
+                        </div>
+                    </div>
+                    
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Envía un mensaje a los fanáticos</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escribe aquí tu mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    
+                <button type="submit" class="btn btn-secondary mb-3">Enviar mensaje!</button>      
+            <div id="carouselExampleControls" class="carousel slide galIndex" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./assets/img/galeria/galeria_1.jpg" class="d-block w-100" alt="imagen galeria 1">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/img/galeria/galeria_2.jpeg" class="d-block w-100" alt="imagen galeria 2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/img/galeria/galeria_3.jpeg" class="d-block w-100" alt="imagen galeria 3">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+            </div>
+        </div>
         </main>
-        <footer class="footer">
-            <div class="imgFoot">
-                <section>
+        <footer class="container-fluid">
+           <div class="w-auto d-flex redSocial">
+                <div class="flex-fill">
                     <a href="https://www.instagram.com" target="_blank">
-                        <img src="./assets/img/Instagram.png" alt="Siguenos en nuestro Instagram">
+                        <img class="img-fluid imgFooter" src="./assets/img/Instagram.png" alt="Siguenos en nuestro Instagram">
                     </a>
-                </section>
-                <section>
+                </div>
+                <div class="flex-fill">
                     <a href="tienda.html">
-                        <img src="./assets/img/Tienda.png" alt="Ve a nuestra tienda">
+                        <img class="img-fluid imgFooter" src="./assets/img/Tienda.png" alt="Ve a nuestra tienda">
                     </a>
-                </section>
-                <section>
+                </div>
+                <div class="flex-fill">
                     <a href="https://www.whatsapp.com" target="_blank">
-                        <img src="./assets/img/Whatsapp.jpg" alt="Unete a nuestro grupo de WhatsApp">
+                        <img class="img-fluid imgFooter" src="./assets/img/Whatsapp.jpg" alt="Unete a nuestro grupo de WhatsApp">
                     </a>
-                </section>
+                </div>
             </div>
-            <div>
-                <nav>
-                    <ul class="navFin">
-                        <li><a class="linkNavFin" href="./index.html">Inicio</a></li>
-                        <li><a class="linkNavFin" href="./pages/nosotros.html">Nosotros</a></li>
-                        <li><a class="linkNavFin" href="./pages/noticias.html">Noticias</a></li>
-                        <li><a class="linkNavFin" href="./pages/eventos.html">Eventos</a></li>
-                        <li><a class="linkNavFin" href="./pages/tienda.html">Tienda</a></li>
-                    </ul>
-                </nav>
+            <div class="mt-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-2 text-reset" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-2 text-reset" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-2 text-reset" href="./pages/noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-2 text-reset" href="./pages/eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-2 text-reset" href="./pages/tienda.html">Tienda</a>
+                    </li>
+                </ul>
             </div>
-            <div class="copyright">
-                <img src="./assets/img/derechos-de-autor.png" alt="Derechos de autor">
-                <label for="">Todos los derechos reservados</label>
+            <div class="d-flex justify-content-center mt-3 pb-5">
+                <i class="far fa-copyright fa-lg text-white d-flex align-items-center"></i>
+                <label class="d-flex align-items-center text-white ms-2" for="">Todos los derechos reservados</label>
             </div>
         </footer>
+        <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
