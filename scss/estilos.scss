@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+@import "footer";
+@import "colors";
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header{
+    background-color: $primary-color;
+    font-weight: 700;
+    .logoNav{
+        height: 80px;
+    }
+}
+.bgInicio{
+    width: auto;
+    height: 85vh;
+    background-image: url(../assets/img/Fondoprincipal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    .imgInicio{
+        width: 300px;
+        animation-name: rotacion;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 15s;
+        animation-delay: 3s;
+    }
+}
+.scrollspy-example{
+    box-sizing: border-box;
+    display: block;
+    height: 120vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+}
+.carousel-item{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.logoEquipo{
+    width: auto;
+    height: 200px;
+}
+.imgNews{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+p{
+    font-family: 'Abel', sans-serif;
+}
+
+$colores-producto: (
+    titulo: $primary-color,
+    precio: #333,
+    boton: #d2d605,
+); 
+
+@each $seccion, $color in $colores-producto {
+    .producto--#{$seccion}{
+        color: $color
+    }
+}
+
+@mixin tarjeta($color-fondo: #a9a9a9) {
+    background: $color-fondo;
+    box-shadow: 0 0 1px rgba($color-fondo, .25);
+}
+
+.tarjeta {
+    @include tarjeta;
+    margin-top: 1rem;
+    transition: transform 2s;
+    
+    &:hover {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes rotacion {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+  
+
+
+
+

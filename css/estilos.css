@@ -1,73 +1,118 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
-
-*{
-    margin:0;
-    padding:0;
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap");
+footer {
+  background-color: #00390a;
+  color: #d2d605;
 }
-body{
-    font-family: "Bebas Neue", sans-serif;
+footer .redSocial {
+  height: 40vh;
+}
+footer .redSocial .imgFooter {
+  width: 600px;
+  height: 40vh;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-header{
-    background-color: #00390a;
-    font-weight: 700;
-    .logoNav{
-        height: 80px;
-    }
+* {
+  margin: 0;
+  padding: 0;
 }
-.bgInicio{
-    width: auto;
-    height: 85vh;
-    background-image: url(../assets/img/Fondoprincipal.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    .imgInicio{
-        width: 300px;
-    }
-}
-.scrollspy-example{
-    box-sizing: border-box;
-    display: block;
-    height: 120vh;
-    overflow-x: auto;
-    overflow-y: auto;
-    position: relative;
-}
-.carousel-item{
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.logoEquipo{
-    width: auto;
-    height: 200px;
-}
-.imgNews{
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-}
-p{
-    font-family: 'Abel', sans-serif;
-}
-footer{
-    background-color: #00390a;
-    color: #d2d605;
-    .redSocial{
-        height: 40vh;
-        .imgFooter{
-            width: 600px;
-            height: 40vh;
-            object-position: center;
-            object-fit: cover;
-        }
-    }
-}    
 
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
 
+header {
+  background-color: #00390a;
+  font-weight: 700;
+}
+header .logoNav {
+  height: 80px;
+}
 
+.bgInicio {
+  width: auto;
+  height: 85vh;
+  background-image: url(../assets/img/Fondoprincipal.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+}
+.bgInicio .imgInicio {
+  width: 300px;
+  animation-name: rotacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-delay: 3s;
+}
 
+.scrollspy-example {
+  box-sizing: border-box;
+  display: block;
+  height: 120vh;
+  overflow-x: auto;
+  overflow-y: auto;
+  position: relative;
+}
 
+.carousel-item {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
 
+.logoEquipo {
+  width: auto;
+  height: 200px;
+}
+
+.imgNews {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+
+p {
+  font-family: "Abel", sans-serif;
+}
+
+.producto--titulo {
+  color: #00390a;
+}
+
+.producto--precio {
+  color: #333;
+}
+
+.producto--boton {
+  color: #d2d605;
+}
+
+.tarjeta {
+  background: #a9a9a9;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  margin-top: 1rem;
+  transition: transform 2s;
+}
+.tarjeta:hover {
+  transform: scale(1.1);
+}
+
+@keyframes rotacion {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=estilos.css.map */

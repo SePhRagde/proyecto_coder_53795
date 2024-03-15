@@ -1,0 +1,15 @@
+@import "colors";
+
+footer{
+    background-color: $primary-color;
+    color: #d2d605;
+    .redSocial{
+        height: 40vh;
+        .imgFooter{
+            width: 600px;
+            height: 40vh;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+}    
