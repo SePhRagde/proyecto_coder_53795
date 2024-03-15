@@ -27,6 +27,7 @@ body {
 header {
   background-color: #00390a;
   font-weight: 700;
+  z-index: 100;
 }
 header .logoNav {
   height: 80px;
