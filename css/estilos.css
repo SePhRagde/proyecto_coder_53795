@@ -55,7 +55,7 @@ header .logoNav {
 .scrollspy-example {
   box-sizing: border-box;
   display: block;
-  height: 50rem;
+  height: 40rem;
   overflow: auto;
   position: relative;
 }
@@ -79,7 +79,21 @@ header .logoNav {
 }
 
 .imgNews {
-  height: 50rem;
+  width: auto;
+  height: 25vh;
+  background-image: url(../assets/img/packersnews.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.imgEventos {
+  height: 50vh;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 p {

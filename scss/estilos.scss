@@ -40,7 +40,7 @@ header{
 .scrollspy-example{
     box-sizing: border-box;
     display: block;
-    height: 50rem;
+    height: 40rem;
     overflow: auto;
     position: relative;
 }
@@ -58,7 +58,18 @@ header{
     height: 200px;
 }
 .imgNews{
-    height: 50rem;
+    width: auto;
+    height: 25vh;
+    background-image: url(../assets/img/packersnews.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+}
+.imgEventos{
+    height: 50vh;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
 }
 p{
     font-family: 'Abel', sans-serif;
