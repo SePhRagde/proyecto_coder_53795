@@ -3,7 +3,7 @@
 @import "colors";
 @import "mixins";
 @import "fonts";
-
+@import "animations";
 
 *{
     margin:0;
@@ -31,15 +31,17 @@
 .nav-link{
     color: $primary-color;
 }
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: $secondary-color;
-  background-color: #212529;
+.nav-pills {
+    .nav-link.active,
+    .show > .nav-link {
+        color: $secondary-color;
+        background-color: $background-color;
+    }
 }
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #212529;
+    background-color: $background-color;
 }
 .navbar-brand{
     white-space: pre-wrap;
@@ -80,24 +82,17 @@
 }
 .accordion-button:not(.collapsed) {
     color: $secondary-color;
-    background-color: #212529;
+    background-color: $background-color;
 }
 .accordion-button:focus {
     border-color: $secondary-color;
     box-shadow: 0 0 0 0.25rem $primary-color;
 }
 
-
-$colores-producto: (
-    titulo: $primary-color,
-    precio: #333,
-    boton: $secondary-color,
-); 
-
-@each $seccion, $color in $colores-producto {
-    .producto--#{$seccion}{
-        color: $color
-    }
+.enlace{
+    &:hover{
+        color: $secondary-color;
+    }   
 }
 
 .tarjeta {
@@ -110,17 +105,18 @@ $colores-producto: (
     }
 }
 
-@keyframes rotacion {
-	0% {
-		transform: rotate(0deg);
-  }
-  50% {
-		transform: rotate(180deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+$colores-producto: (
+    titulo: $primary-color,
+    precio: $background-color,
+    boton: $secondary-color,
+); 
+
+@each $seccion, $color in $colores-producto {
+    .producto--#{$seccion}{
+        color: $color
+    }
 }
+
   
 
 
