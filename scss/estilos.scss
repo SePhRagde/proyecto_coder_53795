@@ -4,11 +4,9 @@
 @import "mixins";
 @import "fonts";
 @import "animations";
-
-*{
-    margin:0;
-    padding:0;
-}
+@import "reset";
+@import "override_bootstrap";
+@import "logo";
 
 .bgInicio{
     width: auto;
@@ -39,7 +37,7 @@
     }
 }
 .dropdown-item.active, .dropdown-item:active {
-    color: #fff;
+    color: $light-color;
     text-decoration: none;
     background-color: $background-color;
 }
@@ -54,17 +52,20 @@
     position: relative;
 }
 .carousel-item{
-    height: 100%;
-    object-fit: cover;
+    height: 400px;
     object-position: center;
+    .indexGal{
+        height: 100%;
+        object-fit: cover;
+    }
 }
 .logoEquipo{
     width: auto;
-    height: 200px;
+    height: $height;
 }
 .fundadores{
     width: auto;
-    height: 200px;
+    height: $height;
 }
 .imgNews{
     width: auto;
