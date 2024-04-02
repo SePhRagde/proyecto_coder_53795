@@ -1,0 +1,4 @@
+@mixin tarjeta($color-fondo: #d8d8d8) {
+    background: $color-fondo;
+    box-shadow: 0 0 1px rgba($color-fondo, .25);
+}

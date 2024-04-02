@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap");
+header {
+  background-color: #00390a;
+  font-weight: 700;
+  z-index: 100;
+}
+header .navbar-brand {
+  white-space: nowrap;
+}
+header .logoNav {
+  height: 80px;
+}
+
 footer {
   background-color: #00390a;
   color: #d2d605;
@@ -15,25 +27,17 @@ footer .redSocial .imgFooter {
      object-fit: cover;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Bebas Neue", sans-serif;
 }
 
-header {
-  background-color: #00390a;
-  font-weight: 700;
-  z-index: 100;
+p {
+  font-family: "Abel", sans-serif;
 }
-header .navbar-brand {
-  white-space: nowrap;
-}
-header .logoNav {
-  height: 80px;
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .bgInicio {
@@ -127,10 +131,6 @@ header .logoNav {
 .accordion-button:focus {
   border-color: #d2d605;
   box-shadow: 0 0 0 0.25rem #00390a;
-}
-
-p {
-  font-family: "Abel", sans-serif;
 }
 
 .producto--titulo {
