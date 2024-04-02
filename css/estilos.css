@@ -29,6 +29,9 @@ header {
   font-weight: 700;
   z-index: 100;
 }
+header .navbar-brand {
+  white-space: nowrap;
+}
 header .logoNav {
   height: 80px;
 }
@@ -50,6 +53,26 @@ header .logoNav {
   animation-timing-function: linear;
   animation-duration: 15s;
   animation-delay: 3s;
+}
+
+.nav-link {
+  color: #00390a;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #d2d605;
+  background-color: #212529;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #212529;
+}
+
+.navbar-brand {
+  white-space: pre-wrap;
 }
 
 .scrollspy-example {
@@ -94,6 +117,16 @@ header .logoNav {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #d2d605;
+  background-color: #212529;
+}
+
+.accordion-button:focus {
+  border-color: #d2d605;
+  box-shadow: 0 0 0 0.25rem #00390a;
 }
 
 p {

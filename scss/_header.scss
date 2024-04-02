@@ -1,0 +1,13 @@
+@import "colors";
+
+header{
+    background-color: $primary-color;
+    font-weight: 700;
+    z-index: 100;
+    .navbar-brand{
+        white-space: nowrap;
+    }
+    .logoNav{
+        height: 80px;
+    }
+}

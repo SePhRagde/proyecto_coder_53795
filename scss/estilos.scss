@@ -1,24 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+@import "header";
 @import "footer";
 @import "colors";
+@import "mixins";
+@import "fonts";
+
 
 *{
     margin:0;
     padding:0;
 }
-body{
-    font-family: "Bebas Neue", sans-serif;
-}
 
-header{
-    background-color: $primary-color;
-    font-weight: 700;
-    z-index: 100;
-    .logoNav{
-        height: 80px;
-    }
-}
 .bgInicio{
     width: auto;
     height: 85vh;
@@ -36,6 +27,22 @@ header{
         animation-duration: 15s;
         animation-delay: 3s;
     }
+}
+.nav-link{
+    color: $primary-color;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: $secondary-color;
+  background-color: #212529;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #212529;
+}
+.navbar-brand{
+    white-space: pre-wrap;
 }
 .scrollspy-example{
     box-sizing: border-box;
@@ -71,25 +78,26 @@ header{
     object-fit: cover;
     object-position: center;
 }
-p{
-    font-family: 'Abel', sans-serif;
+.accordion-button:not(.collapsed) {
+    color: $secondary-color;
+    background-color: #212529;
 }
+.accordion-button:focus {
+    border-color: $secondary-color;
+    box-shadow: 0 0 0 0.25rem $primary-color;
+}
+
 
 $colores-producto: (
     titulo: $primary-color,
     precio: #333,
-    boton: #d2d605,
+    boton: $secondary-color,
 ); 
 
 @each $seccion, $color in $colores-producto {
     .producto--#{$seccion}{
         color: $color
     }
-}
-
-@mixin tarjeta($color-fondo: #d8d8d8) {
-    background: $color-fondo;
-    box-shadow: 0 0 1px rgba($color-fondo, .25);
 }
 
 .tarjeta {
