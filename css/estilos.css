@@ -136,8 +136,17 @@ footer .redSocial .imgFooter {
 }
 
 .imgEventos {
-  height: 50vh;
-  width: auto;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.galIndex {
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
